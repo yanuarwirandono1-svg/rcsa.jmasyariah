@@ -93,7 +93,7 @@
             <!-- User Email Input -->
             <div class="space-y-2">
                 <label for="userEmail" class="block text-sm font-medium text-gray-700">Alamat Email Anda (Wajib)</label>
-                <input type="email" id="userEmail" placeholder="Hasil analisis akan dikirim ke email ini" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors text-sm">
+                <input type="email" id="userEmail" placeholder="Hasil analisis akan dikirim ke email ini, contoh:yanuar.wirandono@jmasyariah.com" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors text-sm">
             </div>
             <div class="space-y-2">
                 <label for="unitKerja" class="block text-sm font-medium text-gray-700">Unit Kerja (Berdasarkan SK No.017/SK-DIR/VII/2025)</label>
@@ -128,7 +128,7 @@
             </div>
             <div class="space-y-2">
                 <label for="deskripsiProses" class="block text-sm font-medium text-gray-700">Deskripsi Proses Bisnis Unit Kerja</label>
-                <textarea id="deskripsiProses" rows="6" placeholder="Jelaskan proses bisnis utama dari unit kerja..." class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors text-sm"></textarea>
+                <textarea id="deskripsiProses" rows="6" placeholder="Jelaskan proses bisnis utama dari unit kerja, contoh: Divisi Teknik Bagian Adminitrasi Kepesertaan bertanggung jawab untuk verifikasi dokumen calon nasabah, input data ke sistem, penerbitan polis, dan pengelolaan dokumen kepesertaan. Proses ini melibatkan interaksi dengan agen dan Divisi Keuangan." class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors text-sm"></textarea>
             </div>
             <div class="space-y-2">
                 <label for="jumlahRisiko" class="block text-sm font-medium text-gray-700">Jumlah Risiko Utama</label>
@@ -198,7 +198,7 @@
             headerDefault: { textAlign: 'center' },
             overrides: {
                 0:  { textAlign: 'center' },
-                1:  { minWidth: '30ch' }, // UNIT KERJA (RISK OWNER)
+                1:  { minWidth: '25ch' }, // UNIT KERJA (RISK OWNER)
                 2:  { minWidth: '25ch' }, // NAMA RISK OWNER
                 3:  { minWidth: '35ch' }, // SASARAN
                 4:  { minWidth: '35ch' }, // KEGIATAN
@@ -214,7 +214,7 @@
                 14: { textAlign: 'center' }, // SKOR INHEREN
                 15: { textAlign: 'center' }, // PERINGKAT INHEREN
                 16: { minWidth: '13ch', textAlign: 'right' }, // TGL. ASESMEN INHEREN
-                17: { minWidth: '25ch' }, // EXISTING CONTROL
+                17: { minWidth: '40ch' }, // EXISTING CONTROL
                 18: { textAlign: 'center' }, // EVALUASI EXISTING CONTROL
                 19: { textAlign: 'center' }, // PERLAKUAN RISIKO
                 20: { minWidth: '40ch' }, // RENCANA MITIGASI
@@ -410,15 +410,15 @@ Kedua, setelah analisis naratif selesai, Identifikasi ${jumlahRisiko} Risiko Uta
 - **RISK ID**: Buat kode unik, contoh: RO-001.
 - **UNIT KERJA & NAMA RISK OWNER**: Isi dengan "${unitKerja}" dan "${namaLengkap}".
 - **SASARAN & KEGIATAN**: Jabarkan dari deskripsi proses bisnis.
-- **SUMBER RISIKO**: Pilih satu jawaban: Internal, Eksternal, Internal & Eksternal.
-- **KATEGORI RISIKO**: Pilih satu jawaban: Risiko Asuransi, Risiko Hukum, Risiko Kepatuhan, Risiko Kredit, Risiko Likuiditas, Risiko Operasional, Risiko Pasar, Risiko Reputasi, Risiko Strategis.
-- **KATEGORI PENYEBAB RISIKO**: Pilih satu jawaban: SDM, Sistem/IT, Prosedur, Eksternal.
+- **SUMBER RISIKO**: Pilih salah satu: Internal, Eksternal, Internal & Eksternal.
+- **KATEGORI RISIKO**: Pilih salah satu: Risiko Asuransi, Risiko Hukum, Risiko Kepatuhan, Risiko Kredit, Risiko Likuiditas, Risiko Operasional, Risiko Pasar, Risiko Reputasi, Risiko Strategis.
+- **KATEGORI PENYEBAB RISIKO**: Pilih salah satu: SDM, Sistem/IT, Prosedur, Eksternal.
 - **ESTIMASI BIAYA**: Berikan angka perkiraan dalam Rupiah (contoh: 50.000.000).
 - **ASESMEN KEMUNGKINAN & DAMPAK**: Gunakan skala angka 1 sampai 5.
 - **SKOR & PERINGKAT**: Hitung (Kemungkinan x Dampak) dan tentukan peringkatnya (RENDAH, SEDANG RENDAH, SEDANG, SEDANG TINGGI, SANGAT TINGGI). **Hanya tuliskan angka skor di kolom SKOR dan teks peringkat di kolom PERINGKAT.**
 - **TGL. ASESMEN**: Gunakan tanggal hari ini (${today}).
-- **EVALUASI EXISTING CONTROL**: Pilih satu jawaban: Efektif, Kurang efektif, Tidak efektif.
-- **PERLAKUAN RISIKO**: Pilih salah jawaban: Accept (Diterima), Share (Dibagi), Transfer (Dialihkan), Reduce (Dikurangi), Avoid (Dihindari).
+- **EVALUASI EXISTING CONTROL**: Pilih salah satu: Efektif, Kurang efektif, Tidak efektif.
+- **PERLAKUAN RISIKO**: Pilih salah satu: Accept (Diterima), Share (Dibagi), Transfer (Dialihkan), Reduce (Dikurangi), Avoid (Dihindari).
 - **TARGET PELAKSANAAN MITIGASI**: Berikan tanggal di masa depan (DD/MM/YYYY).
 `;
                 
@@ -594,6 +594,3 @@ Kedua, setelah analisis naratif selesai, Identifikasi ${jumlahRisiko} Risiko Uta
 
 </body>
 </html>
-
-
-
