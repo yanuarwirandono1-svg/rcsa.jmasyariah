@@ -132,7 +132,7 @@
             </div>
             <div class="space-y-2">
                 <label for="jumlahRisiko" class="block text-sm font-medium text-gray-700">Jumlah Risiko Utama</label>
-                <input type="number" id="jumlahRisiko" value="5" min="1" max="10" class="w-20 p-3 text-center border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors text-sm">
+                <input type="number" id="jumlahRisiko" value="5" min="1" max="20" class="w-20 p-3 text-center border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors text-sm">
             </div>
             <div class="space-y-2">
                 <label for="uploadControl" class="block text-sm font-medium text-gray-700">Unggah Internal Control (Opsional)</label>
@@ -198,14 +198,14 @@
             headerDefault: { textAlign: 'center' },
             overrides: {
                 0:  { textAlign: 'center' },
-                1:  { minWidth: '20ch' }, // UNIT KERJA (RISK OWNER)
-                2:  { minWidth: '15ch' }, // NAMA RISK OWNER
-                3:  { minWidth: '25ch' }, // SASARAN
-                4:  { minWidth: '25ch' }, // KEGIATAN
+                1:  { minWidth: '30ch' }, // UNIT KERJA (RISK OWNER)
+                2:  { minWidth: '25ch' }, // NAMA RISK OWNER
+                3:  { minWidth: '35ch' }, // SASARAN
+                4:  { minWidth: '35ch' }, // KEGIATAN
                 5:  { minWidth: '40ch' }, // PERISTIWA RISIKO
                 6:  { textAlign: 'center' }, // SUMBER RISIKO 
                 7:  { minWidth: '20ch', textAlign: 'center' }, // KATEGORI RISIKO
-                8:  { minWidth: '40ch' }, // PENYEBAB RISIKO
+                8:  { minWidth: '45ch' }, // PENYEBAB RISIKO
                 9:  { minWidth: '13ch', textAlign: 'center' }, // KATEGORI PENYEBAB RISIKO
                 10: { minWidth: '40ch' }, // DAMPAK RISIKO
                 11: { minWidth: '13ch', textAlign: 'right' }, // ESTIMASI BIAYA KERUGIAN (Rp)
@@ -594,4 +594,5 @@ Kedua, setelah analisis naratif selesai, Identifikasi ${jumlahRisiko} Risiko Uta
 
 </body>
 </html>
+
 
